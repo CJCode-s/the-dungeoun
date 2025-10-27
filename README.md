@@ -1,4 +1,5 @@
 # THIS IS A TEST BRANCH!
+I put new features here before deciding if I want to implement them in the main branch.
 
 # Build Game from Source (Windows)
 
