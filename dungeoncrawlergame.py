@@ -105,13 +105,23 @@ def attack(): #Player attacks
 
 def defend(): #Enemy attacks
     global player_health
+    global player_maxhealth
     global enemy_damage
-    if player_health <= enemy_damage:
-        player_health = 0
-        return
+    parry = random.randint(0,player_maxhealth) #Parry chance decreases with max health
+    if parry == player_health:
+        print("PAREE!")
+        if player_health <= enemy_damage:
+            player_health = 1
+            return
+        else:
+            player_health = player_health - enemy_damage//2 #Floor division prevents player health from becoming float
     else:
-        player_health = player_health - enemy_damage
-        return
+        if player_health <= enemy_damage:
+            player_health = 0
+            return
+        else:
+            player_health = player_health - enemy_damage
+            return
 
 def itemspawn(): #Item spawning and placement in chest
     name = random.randint(0,4)
