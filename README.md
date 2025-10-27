@@ -1,2 +1,7 @@
-# the-dungeoun
-Simple text-based dungeon crawler I wrote in Python for fun. The entire game is in Middle English. I ask that if you use this game to make another game, I wanna see what you come up with (this isn't part of the license, just a friendly request).
+# How to Build Game from Source
+
+My preferred method for creating an exe or other file is using PyInstaller. Instructions for installing PyInstaller can be found [here](https://pyinstaller.org/en/stable/installation.html).
+
+Once you have PyInstaller, use `pyinstaller --onefile dungeoncrawlergame.py` to create an application for the game. 
+
+This specific command will create the application in one file, and I strongly recommend doing it this way.
