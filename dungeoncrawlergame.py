@@ -248,7 +248,7 @@ while 'q' not in quit_game:
     player_maxhealth = 10
     player_health = 10
     player_damage = 1
-    player_fire = 0 #Fire upgrade is a modifier for enemies weak to fire, instakills vulnerable enemies if 1
+    player_fire = 0 
     while depth <= 12:
         if depth < 4: #If elif chain used for determining what enemies to spawn at each depth
             layer()
